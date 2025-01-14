@@ -1,0 +1,1 @@
+Código onde pega uma base de Dados do arquivo ".csv", e passa automaticamente para um site fictício de uma empresa. Use no arquivo "auxiliar" para achar a coordenada certa dos pixels em sua tela, e após isso fazer alteração no arqvuio principal.py.
