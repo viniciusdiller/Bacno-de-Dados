@@ -11,16 +11,18 @@ import pandas #TRABALHAR COM BASE DE DADOS ( os produtos )
 pyautogui.PAUSE = 0.5    # A CADA COMANDO DO CÓDIGO VAI DEMORAR ESSE TEMPO
 #abrir no navegador
 pyautogui.press("win")
-pyautogui.write("Banco de Dados")
-time.sleep(0.3)
+pyautogui.write("Chrome")
+time.sleep(0.7)
+pyautogui.press("enter")
+pyautogui.write("http://127.0.0.1:5500/Banco%20de%20Dados.html")
 pyautogui.press("enter")
 
 #entrar no site
 time.sleep(1)          # SOMENTE NESSE PASSO DO CÓDIGO
 #entrou no site, clica e bota o emailzinho
-pyautogui.click(x=2739, y=503)
+pyautogui.click(x=689, y=406)
 pyautogui.hotkey("ctrl, a")
-pyautogui.write("vinequinho@hotmail.com")
+pyautogui.write("usuariofictício@hotmail.com")
 pyautogui.press("tab")
 pyautogui.write("vivizinhoo")
 pyautogui.press("tab")
@@ -39,7 +41,7 @@ for linha in tabela.index:
 
     # CADASTRAR O PRODUTO 
     codigo = str(tabela.loc[linha, "codigo"])
-    pyautogui.click(x=2613, y=395)
+    pyautogui.click(x=676, y=296)
     pyautogui.write(codigo)
 
     #marca 
